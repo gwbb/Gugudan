@@ -8,9 +8,7 @@ public class Gugudan {
 		int number = scanner.nextInt();
 		System.out.println("User input number : " + number);
 		
-		if (number < 2) {
-			System.out.println("Wrong number (please input 2 ~ 9)");
-		} else if (number > 9) {
+		if (number < 2 || number > 9) {
 			System.out.println("Wrong number (please input 2 ~ 9)");
 		} else {
 			for(int i = 1; i < 10; i++) {

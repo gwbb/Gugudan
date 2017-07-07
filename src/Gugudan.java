@@ -2,20 +2,25 @@ import java.util.Scanner;
 
 public class Gugudan {
 	public static void main(String[] args) {
+		// eight - nine time table (possible two ~ nine)
+		System.out.println("Enter the number of time table you want : ");
+		Scanner scanner = new Scanner(System.in);
+		int number = scanner.nextInt();
+		System.out.println("User input number : " + number);
 		
-		// six time table, use while
-		int i = 1;
-		while(i < 10) {
-			System.out.println(6 * i);
-			i = i + 1; // i++
+		if (number < 2) {
+			System.out.println("Wrong number (please input 2 ~ 9)");
+		} else if (number > 9) {
+			System.out.println("Wrong number (please input 2 ~ 9)");
+		} else {
+			for(int i = 1; i < 10; i++) {
+				System.out.println(number * i);
+			}
 		}
-		
-		// seven time table, use for
-		for(int j = 1; j < 10; j++) {
-			System.out.println(7 * j);
-		}
+				
 	}
 }
+
 
 //		// two time table
 //		System.out.println("Two time table");
@@ -75,3 +80,14 @@ public class Gugudan {
 //		System.out.println(number * 7);
 //		System.out.println(number * 8);
 //		System.out.println(number * 9);
+//		
+//		// six time table, use while
+//		int i = 1;
+//		while(i < 10) {
+//			System.out.println(6 * i);
+//			i = i + 1; // i++
+//		}
+//		
+//		// seven time table, use for
+//		for(int j = 1; j < 10; j++) {
+//			System.out.println(7 * j);

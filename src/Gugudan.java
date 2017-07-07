@@ -3,6 +3,20 @@ import java.util.Scanner;
 public class Gugudan {
 	public static void main(String[] args) {
 		
+		// six time table, use while
+		int i = 1;
+		while(i < 10) {
+			System.out.println(6 * i);
+			i = i + 1; // i++
+		}
+		
+		// seven time table, use for
+		for(int j = 1; j < 10; j++) {
+			System.out.println(7 * j);
+		}
+	}
+}
+
 //		// two time table
 //		System.out.println("Two time table");
 //		System.out.println(2 * 1);
@@ -47,20 +61,17 @@ public class Gugudan {
 //		System.out.println(result);
 //		result = 4 * 9;
 //		System.out.println(result);
-		
-		// the rules of multiplication, use scanner
-		System.out.println("Enter the number of time table you want : ");
-		Scanner scanner = new Scanner(System.in);
-		int number = scanner.nextInt();
-		System.out.println(number * 1);
-		System.out.println(number * 2);
-		System.out.println(number * 3);
-		System.out.println(number * 4);
-		System.out.println(number * 5);
-		System.out.println(number * 6);
-		System.out.println(number * 7);
-		System.out.println(number * 8);
-		System.out.println(number * 9);
-		
-	}
-}
+//		
+//		// five time table, use scanner
+//		System.out.println("Enter the number of time table you want : ");
+//		Scanner scanner = new Scanner(System.in);
+//		int number = scanner.nextInt();
+//		System.out.println(number * 1);
+//		System.out.println(number * 2);
+//		System.out.println(number * 3);
+//		System.out.println(number * 4);
+//		System.out.println(number * 5);
+//		System.out.println(number * 6);
+//		System.out.println(number * 7);
+//		System.out.println(number * 8);
+//		System.out.println(number * 9);

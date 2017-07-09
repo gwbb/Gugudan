@@ -1,8 +1,7 @@
 public class GugudanMain {
 	public static void main(String[] args) {
-		for (int i = 2; i < 10; i++) {
-			int[] result = Gugudan.calculate(i);
-			Gugudan.print(result);
-		}
+		int times = Gugudan.takenum();
+		int[] result = Gugudan.calculate(times);
+		Gugudan.print(result);
 	}
 }
